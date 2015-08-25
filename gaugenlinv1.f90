@@ -136,6 +136,7 @@ integer k, i
 		end do
 		if(i>10.0) then
 		write (*,'(4e32.20e3)') (wv*exp(a(6))), ((y(9)*y(9)+y(13)*y(13))*(wv*wv*wv*exp(3*a(6)))), ((y(11)*y(11))*(wv*wv*wv*exp(3*a(6)))), (abs(y(11)*y(13))*(wv*wv*wv*exp(3*a(6))))
+		! Plot in logscale
 		end if
 		a(6) = i+5.0
 	end do
