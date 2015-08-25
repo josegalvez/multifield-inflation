@@ -178,7 +178,8 @@ integer l
 		y(16) = 0.0
 		end if
 		if (l*dt1>=1.0) then
-! Amplitude plots
+! Amplitude plots (delete log and plot in logscale, if you require) 
+! Does not need dt1 as a time step
 !		write (*,'(4e28.17e3)') l*dt, log(y(9)), log(y(11)), log(y(13))
 ! Full mode evolution (polar plot)
 		write (*,'(4e28.17e3)')  y(9)*cos(y(15))+y(13)*cos(y(16)), y(11)*sin(y(16)), l*dt1
